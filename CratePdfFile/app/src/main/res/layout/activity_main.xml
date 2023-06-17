@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purplemain"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/nameEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:background="@drawable/custom_edittext"
+        android:textColorHint="@color/white"
+        android:layout_marginBottom="10dp"
+        android:hint="AdSoyad"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/numberplateEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameEdt"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        android:hint="Plaka"
+        android:textAlignment="center"
+        android:background="@drawable/custom_edittext"
+        android:textColorHint="@color/white"
+        android:inputType="textCapCharacters"
+        android:minHeight="48dp" />
+    <EditText
+        android:id="@+id/brandEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numberplateEdt"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:background="@drawable/custom_edittext"
+        android:textColorHint="@color/white"
+        android:hint="Marka/Model"
+
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/explanationEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/brandEdt"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        android:hint="Açıklama"
+        android:textAlignment="center"
+        android:background="@drawable/custom_edittext"
+        android:textColorHint="@color/white"
+        android:minHeight="48dp" />
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLayout"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/custom_edittext"
+        android:backgroundTint="@color/colorlistview"/>
+<LinearLayout
+    android:id="@+id/btnLayout"
+    android:layout_width="match_parent"
+    android:layout_below="@+id/explanationEdt"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/colorbtn"
+        android:text="Kayıt Ekle"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/cratesBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@id/addBtn"
+        android:backgroundTint="@color/colorbtn"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="PDF  Oluştur"
+        android:textSize="20sp" />
+</LinearLayout>
+
+
+</RelativeLayout>
